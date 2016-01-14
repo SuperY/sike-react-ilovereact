@@ -207,6 +207,21 @@ a:hover {
           align-items:center;
 }
 
+
+.title .react-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title .react-logo #logo {
+  /*  FIX: Change to GPU mode */
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+}
+
 #slider-control {
   position: fixed;
   top:50%;
