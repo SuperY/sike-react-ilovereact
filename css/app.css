@@ -1,0 +1,158 @@
+body, div, span {
+  box-sizing: border-box;
+
+  /******************/
+  position: relative;
+  /******************/
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-shrink: 0;
+  align-content: flex-start;
+
+  border: 0 solid black;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  background-color: #1F1E34;
+  color: #FFF;
+  font-family: "Avenir Next",
+      "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+      Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  position: relative;
+  font-size: 64px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  font-weight: 400;
+  color: #FFF;
+  padding:6px;
+}
+
+a:hover {
+  font-weight: 400;
+  color: #DADADA;
+  text-decoration: none;
+}
+
+.section {
+  /*position: static;*/
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+}
+
+.section-items{
+  display: flex;
+  flex-direction: row;
+}
+
+.section-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+  overflow: hidden;
+}
+
+.iphone-demo {
+  display: flex;
+  align-self:stretch; 
+  flex-grow:1;
+  flex-basis:0;
+  align-items:center;
+  justify-content:center;
+}
+
+.iphone-demo-img-parent {
+     position: relative;
+}
+
+.iphone-demo-img{
+  position: absolute;
+  top: 90px;
+  left: 25px;
+}
+
+#android-robot {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform:rotate(-45deg) translate(-10%, 70%);
+}
+
+.feature-description {
+  display: flex;
+  flex-direction: column;
+  align-self:stretch;
+  flex-grow:1;
+  flex-basis:0;
+  justify-content:center;
+  align-items:center;
+}
+
+#slider-control {
+  position: fixed;
+  top:50%;
+  right: 0;
+  padding: 3px;
+  transform: translate(0%,-50%);
+  align-self:flex-end;
+}
+
+#slider-control a {
+  padding: 3px;
+}
+
+#slider-control .dot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+#slider-control .active .dot {
+  background-color: #fff;
+}
+
+#intro-section {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
+}
